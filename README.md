@@ -1,0 +1,1 @@
+Welcome to my LeetCode journey — a collection of my solutions to coding problems from LeetCode. This repo is all about consistency, problem-solving, and getting better at data structures and algorithms one problem at a time.
