@@ -1,4 +1,5 @@
-14. Longest Common Prefix
+# 14. Longest Common Prefix
+
 Solved
 Easy
 
@@ -11,7 +12,7 @@ If there is no common prefix, return an empty string "".
  
 
 Example 1:
-
+6
 Input: strs = ["flower","flow","flight"]
 Output: "fl"
 Example 2:
