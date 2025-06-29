@@ -33,4 +33,4 @@
 | ---------- | ------ |
 | Easy       | 186/918 ✅|
 | Medium     | 240/1977 ✅|
-| Hard       | 71/896   ✅|- Update on 2026-05-14 commit 1
+| Hard       | 71/896   ✅|- Update on 2026-05-14 commit 1- Update on 2025-06-29 commit 1
