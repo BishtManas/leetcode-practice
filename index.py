@@ -1,22 +1,12 @@
 class Solution:
-    def validPalindrome(self, s: str) -> bool:
-        def is_pali_range(left, right):
-            while left < right:
-                if s[left] != s[right]:
-                    return False
-                left += 1
-                right -= 1
-            return True
-
-        left, right = 0, len(s) - 1
-        while left < right:
-            if s[left] != s[right]:
-                # Try skipping left or right character
-                return is_pali_range(left + 1, right) or is_pali_range(left, right - 1)
-            left += 1
-            right -= 1
-        return True
+    def getRow(self, rowIndex: int) -> list[int]:
+        row = [1]
+        for i in range(1, rowIndex + 1):
+            row.append(0)  # add a new element at the end
+            for j in range(i, 0, -1):  # update from back to front
+                row[j] = row[j] + row[j - 1]
+        return row
 info = Solution()
-print(info.validPalindrome('aba'))# output : true
-print(info.validPalindrome('abcd'))# output : false
-print(info.validPalindrome('abce'))# output : false
+print(info.getRow(3))
+print(info.getRow(0))
+print(info.getRow(1))
