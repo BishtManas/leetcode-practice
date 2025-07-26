@@ -26,4 +26,8 @@ head = deleteDuplicates(a)
 while head:
     print(head.val, end=" -> ")
     head = head.next
-print("None")
+print("None")# Remove duplicate from sorted linked list using in-place pointer update 
+# This program removes duplicates values from a sorted linked list.
+# Since the list is sorted, all duplicated come one after another.
+# I loop through the list and skip any repeated values using simple pointer logic.
+# It's done in-place, meaning I didn't use any extra space -- just updated the .next pointer directly.
