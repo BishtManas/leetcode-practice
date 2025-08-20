@@ -11,14 +11,14 @@ def group_anagrams(strs: List[str]) -> List[List[str]]:
     return list(groups.values())
 
 if __name__ == "__main__":
-    # Sample input
+    
     sample = ["eat","tea","tan","ate","nat","bat"]
     result = group_anagrams(sample)
     print("Input:", sample)
     print("Grouped anagrams:", result)
 
-    # Quick assertions / tests
-    def as_sets(lol):  # normalize order for comparison
+
+    def as_sets(lol):  
         return set(tuple(sorted(group)) for group in lol)
 
     expected = [["bat"], ["nat","tan"], ["ate","eat","tea"]]
