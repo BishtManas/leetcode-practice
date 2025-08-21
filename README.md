@@ -31,8 +31,8 @@
 
 | Difficulty | Solved |
 | ---------- | ------ |
-| Easy       | 12 ✅   |
-| Medium     | 8 ✅    |
-| Hard       | 3 ✅    |
+| Easy       | 103 ✅   |
+| Medium     | 9 ✅    |
+| Hard       | 2 ✅    |
 
 ---
