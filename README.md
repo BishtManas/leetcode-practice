@@ -32,7 +32,7 @@
 | Difficulty | Solved |
 | ---------- | ------ |
 | Easy       | 103 ✅   |
-| Medium     | 9 ✅    |
+| Medium     | 10 ✅    |
 | Hard       | 3 ✅    |
 
 ---
