@@ -9,9 +9,9 @@
 
 | Difficulty | Category        | Problem Examples                                                           |
 | ---------- | --------------- | -------------------------------------------------------------------------- |
-| Easy       | Arrays, Strings | [Two Sum](https://github.com/BishtManas/leetcode-practice/tree/main/01%20Two%20sum)                                               |
-| Medium     | Linked List     | [Add Two Numbers](./Medium/Add%20Two%20Numbers/)                           |
-| Hard       | Binary Search   | [Median of Two Sorted Arrays](./Hard/Median%20of%20Two%20Sorted%20Arrays/) |
+| Easy       | Arrays, Strings | [Two Sum](https://github.com/BishtManas/leetcode-practice/blob/main/01%20Two%20sum/readme.md)                                               |
+| Medium     | Algorithms, Math | [Reverse Integer](https://github.com/BishtManas/leetcode-practice/blob/main/07%20Reverse%20Integer/readme.md)                           |
+| Hard       | Binary Search, Algorithms| [Median of Two Sorted Arrays](https://github.com/BishtManas/leetcode-practice/blob/main/04%20Median%20of%20Two%20Sorted%20Arrays/readme.md) |
 
 
 ### 🛠️ Languages Used
