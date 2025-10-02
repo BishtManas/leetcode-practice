@@ -21,7 +21,7 @@
 ---
 
 ### 🧠 My Goals with this Repo
-
+76
 * Improve consistency in problem solving
 * Learn optimized patterns and algorithms
 * Build a solid reference for interview prep
@@ -32,5 +32,5 @@
 | Difficulty | Solved |
 | ---------- | ------ |
 | Easy       | 116/895 ✅|
-| Medium     | 75/1911 ✅|
+| Medium     | 76/1911 ✅|
 | Hard       | 11/865   ✅|
