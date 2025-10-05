@@ -21,7 +21,6 @@
 ---
 
 ### 🧠 My Goals with this Repo
-76
 * Improve consistency in problem solving
 * Learn optimized patterns and algorithms
 * Build a solid reference for interview prep
