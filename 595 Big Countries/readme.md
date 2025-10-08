@@ -1,0 +1,49 @@
+# 595 Big Countries
+
+SQL Schema
+
+Pandas Schema
+
+Table: World
+
+| Column Name | Type    |
+|-------------|---------|
+| name        | varchar |
+| continent   | varchar |
+| area        | int     |
+| population  | int     |
+| gdp         | bigint  |
+
+
+name is the primary key (column with unique values) for this table.
+Each row of this table gives information about the name of a country, the continent to which it belongs, its area, the population, and its GDP value.
+ 
+
+A country is big if:
+
+it has an area of at least three million (i.e., 3000000 km2), or
+it has a population of at least twenty-five million (i.e., 25000000).
+Write a solution to find the name, population, and area of the big countries.
+
+Return the result table in any order.
+
+The result format is in the following example.
+
+ 
+
+Example 1:
+
+Input: 
+| Name        | Continent | Area     | Population | GDP            |
+|-------------|-----------|----------|------------|----------------|
+| Afghanistan | Asia      | 652,230  | 25,500,100 | $20,343,000,000 |
+| Albania     | Europe    | 28,748   | 2,831,741  | $12,960,000,000 |
+| Algeria     | Africa    | 2,381,741| 37,100,000 | $188,681,000,000|
+| Andorra     | Europe    | 468      | 78,115     | $3,712,000,000  |
+| Angola      | Africa    | 1,246,700| 20,609,294 | $100,990,000,000|
+
+Output: 
+| Name        | Population | Area     |
+|-------------|------------|----------|
+| Afghanistan | 25,500,100 | 652,230  |
+| Algeria     | 37,100,000 | 2,381,741|
