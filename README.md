@@ -31,5 +31,5 @@
 | Difficulty | Solved |
 | ---------- | ------ |
 | Easy       | 124/895 ✅|
-| Medium     | 98/1911 ✅|
+| Medium     | 99/1911 ✅|
 | Hard       | 15/865   ✅|
