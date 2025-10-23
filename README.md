@@ -16,7 +16,8 @@
 
 ### 🛠️ Languages Used
 
-* Python 🐍
+* Python
+* SQL
 
 ---
 
@@ -30,6 +31,6 @@
 
 | Difficulty | Solved |
 | ---------- | ------ |
-| Easy       | 124/895 ✅|
-| Medium     | 100/1911 ✅|
-| Hard       | 15/865   ✅|
+| Easy       | 124/908 ✅|
+| Medium     | 100/1936 ✅|
+| Hard       | 15/877   ✅|
