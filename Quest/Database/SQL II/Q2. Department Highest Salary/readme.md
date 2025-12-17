@@ -1,35 +1,34 @@
-Q1. Investments in 2016
-Medium
-Topics
-premium lock icon
-Companies
-Hint
-SQL Schema
-Pandas Schema
-Table: Insurance
+# Q2. Department Highest Salary
 
-+-------------+-------+
-| Column Name | Type  |
-+-------------+-------+
-| pid         | int   |
-| tiv_2015    | float |
-| tiv_2016    | float |
-| lat         | float |
-| lon         | float |
-+-------------+-------+
-pid is the primary key (column with unique values) for this table.
-Each row of this table contains information about one policy where:
-pid is the policyholder's policy ID.
-tiv_2015 is the total investment value in 2015 and tiv_2016 is the total investment value in 2016.
-lat is the latitude of the policy holder's city. It's guaranteed that lat is not NULL.
-lon is the longitude of the policy holder's city. It's guaranteed that lon is not NULL.
+
+
+| Column Name  | Type    |
+|--------------|---------|
+| id           | int     |
+| name         | varchar |
+| salary       | int     |
+| departmentId | int     |
+
+id is the primary key (column with unique values) for this table.
+departmentId is a foreign key (reference columns) of the ID from the Department table.
+Each row of this table indicates the ID, name, and salary of an employee. It also contains the ID of their department.
  
 
-Write a solution to report the sum of all total investment values in 2016 tiv_2016, for all policyholders who:
+Table: Department
 
-have the same tiv_2015 value as one or more other policyholders, and
-are not located in the same city as any other policyholder (i.e., the (lat, lon) attribute pairs must be unique).
-Round tiv_2016 to two decimal places.
+
+| Column Name | Type    |
+|-------------|---------|
+| id          | int     |
+| name        | varchar |
+
+id is the primary key (column with unique values) for this table. It is guaranteed that department name is not NULL.
+Each row of this table indicates the ID of a department and its name.
+ 
+
+Write a solution to find employees who have the highest salary in each of the departments.
+
+Return the result table in any order.
 
 The result format is in the following example.
 
@@ -38,24 +37,29 @@ The result format is in the following example.
 Example 1:
 
 Input: 
-Insurance table:
-+-----+----------+----------+-----+-----+
-| pid | tiv_2015 | tiv_2016 | lat | lon |
-+-----+----------+----------+-----+-----+
-| 1   | 10       | 5        | 10  | 10  |
-| 2   | 20       | 20       | 20  | 20  |
-| 3   | 10       | 30       | 20  | 20  |
-| 4   | 10       | 40       | 40  | 40  |
-+-----+----------+----------+-----+-----+
-Output: 
-+----------+
-| tiv_2016 |
-+----------+
-| 45.00    |
-+----------+
-Explanation: 
-The first record in the table, like the last record, meets both of the two criteria.
-The tiv_2015 value 10 is the same as the third and fourth records, and its location is unique.
+Employee table:
 
-The second record does not meet any of the two criteria. Its tiv_2015 is not like any other policyholders and its location is the same as the third record, which makes the third record fail, too.
-So, the result is the sum of tiv_2016 of the first and last record, which is 45.
+| id | name  | salary | departmentId |
+|----|-------|--------|--------------|
+| 1  | Joe   | 70000  | 1            |
+| 2  | Jim   | 90000  | 1            |
+| 3  | Henry | 80000  | 2            |
+| 4  | Sam   | 60000  | 2            |
+| 5  | Max   | 90000  | 1            |
+
+Department table:
+
+| id | name  |
+|----|-------|
+| 1  | IT    |
+| 2  | Sales |
+
+Output: 
+
+| Department | Employee | Salary |
+|------------|----------|--------|
+| IT         | Jim      | 90000  |
+| Sales      | Henry    | 80000  |
+| IT         | Max      | 90000  |
+
+Explanation: Max and Jim both have the highest salary in the IT department and Henry has the highest salary in the Sales department
