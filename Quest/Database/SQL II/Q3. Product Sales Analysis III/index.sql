@@ -10,6 +10,6 @@ JOIN (
         MIN(year) AS first_year
     FROM Sales
     GROUP BY product_id
-) t
+) 
 ON s.product_id = t.product_id
 AND s.year = t.first_year;
