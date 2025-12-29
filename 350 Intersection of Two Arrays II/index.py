@@ -7,7 +7,6 @@ def intersect(nums1, nums2):
 
     for num in count1:
         if num in count2:
-            # add the common number min times
             times = min(count1[num], count2[num])
             result.extend([num] * times)
     
