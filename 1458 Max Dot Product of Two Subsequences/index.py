@@ -14,21 +14,5 @@ class Solution:
                                nums1[i] * nums2[j] + max(dp[i + 1][j + 1], 0)
                             )
         return dp[0][0]
-
-
-    # Top Down 
-        cache = {}
-        def dfs(i, j):
-            if i == len(nums1) or j == len(nums2):
-                return float('-inf')
-            if (i, j) in cache:
-                return cache[(i, j)]
-            skip_i = dfs(i + 1, j)
-            skip_j = dfs(i, j + 1)
-            not_skip = nums1[i] * nums2[j] + max(dfs(i + 1, j + 1), 0)
-            cache[(i, j)] = max(skip_i, skip_j, not_skip)
-            return cache[(i, j)]
-        return dfs(0, 0)
-            
             
                 
