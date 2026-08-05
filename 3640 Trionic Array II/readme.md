@@ -44,4 +44,3 @@ Constraints:
 
 4 <= n = nums.length <= 105
 -109 <= nums[i] <= 109
-It is guaranteed that at least one trionic subarray exists.
