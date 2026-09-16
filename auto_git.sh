@@ -1,13 +1,13 @@
 #!/bin/bash
 
-start_date="2025-11-07"
-end_date="2025-12-15"
+start_date="2026-10-16"
+end_date="2026-10-29"
 
 current_date="$start_date"
 
 while [ "$(date -d "$current_date" +%s)" -le "$(date -d "$end_date" +%s)" ]
 do
-    for i in {1..5}
+    for i in {1..3}
     do
         echo "- Update on $current_date commit $i" >> README.md
 
